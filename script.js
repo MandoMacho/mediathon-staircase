@@ -11,7 +11,7 @@ const timelineFrames = [
     quote: "Warm morning rays project stark geometric window frames high onto the wall.",
     traffic: "Solitary • Empty stairs",
     angle: "High Diagonal Horizon Slant",
-    image: "images/_DSC1778.JPG"
+    image: "./images/_DSC1778.JPG"
   },
   {
     decimalHour: 8.5, // 08:30 AM
@@ -24,7 +24,7 @@ const timelineFrames = [
     quote: "Early commuters ascending. The shadow projection begins to slide down the interior wall.",
     traffic: "Low • Single transit",
     angle: "Descending East Cast",
-    image: "images/_DSC1779.JPG"
+    image: "./images/_DSC1779.JPG"
   },
   {
     decimalHour: 10.0, // 10:00 AM
@@ -37,7 +37,7 @@ const timelineFrames = [
     quote: "Diffused, flat lighting fills the stairwell as foot traffic increases. Most students prefer to the elevator at this hour.",
     traffic: "Solitary • Empty stairs",
     angle: "Diffused Ambient Fill",
-    image: "images/_DSC1811.JPG"
+    image: "./images/_DSC1811.JPG"
   },
   {
     decimalHour: 11.5, // 11:30 AM
@@ -50,7 +50,7 @@ const timelineFrames = [
     quote: "Sharp, high-contrast light bites into the stair risers as the sun approaches peak elevation.",
     traffic: "Minimal • Empty transit",
     angle: "Steep Diagonal Cast",
-    image: "images/_DSC1850.JPG"
+    image: "./images/_DSC1850.JPG"
   },
   {
     decimalHour: 13.0, // 01:00 PM
@@ -63,7 +63,7 @@ const timelineFrames = [
     quote: "Zenith light creates intricate, layered shadows of the balustrades overlapping each other.",
     traffic: "High Density • Group gathering",
     angle: "Near Vertical Overhead",
-    image: "images/_DSC1576.JPG"
+    image: "./images/_DSC1576.JPG"
   },
   {
     decimalHour: 14.5, // 02:30 PM
@@ -76,7 +76,7 @@ const timelineFrames = [
     quote: "Sun shifts to the west. ",
     traffic: "silent • Sparse transit",
     angle: "High West Reversal",
-    image: "images/_DSC1585.JPG"
+    image: "./images/_DSC1585.JPG"
   },
   {
     decimalHour: 16.0, // 04:00 PM
@@ -89,7 +89,7 @@ const timelineFrames = [
     quote: "Indirect ambient bounce light completely overtakes the stairwell. Zero harsh shadows remain.",
     traffic: "Zero • Complete lull",
     angle: "Flat Ambient Reflection",
-    image: "images/_DSC1793.JPG"
+    image: "./images/_DSC1793.JPG"
   },
   {
     decimalHour: 17.5, // 05:30 PM
@@ -102,7 +102,7 @@ const timelineFrames = [
     quote: "Low lateral sun casts a stark, dramatic silhouette of a student against the far wall.",
     traffic: "Steady • Individual transit",
     angle: "Extreme West Low Rake",
-    image: "images/_DSC1552.JPG"
+    image: "./images/_DSC1552.JPG"
   },
   {
     decimalHour: 19.0, // 07:00 PM (Adjusted from 20.0)
@@ -115,7 +115,7 @@ const timelineFrames = [
     quote: "Harsh artificial lighting casts a distinct, bright lower shadow as a solitary figure blurs past.",
     traffic: "Low • Evening lockup",
     angle: "Extreme West Low Rake",
-    image: "images/_DSC1558.JPG"
+    image: "./images/_DSC1558.JPG"
   }
 ];
 
