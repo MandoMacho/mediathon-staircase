@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>One Staircase, Every Hour | Chrono-Photographic Study</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+<body data-ambient="dawn">
+
+  <div class="ambient-fog" id="ambientFog"></div>
+
+  <!-- Top Navigation -->
+  <header class="navbar">
+    <div class="nav-left">
+      <span class="pulse-indicator"></span>
+      <span class="mono-title">BPDC • MEDIATHON 3.0</span>
+    </div>
+    <div class="nav-right">
+      <span class="mono-sub">LAT 25.1311° N, LON 55.4199° E</span>
+      <a href="https://drive.google.com" target="_blank" class="exif-btn">Verify EXIF (Drive) ↗</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- Section 1: Hero & Real-time Solar Scrubber -->
+    <section class="hero-block">
+      <div class="theme-tag">// SPATIAL TIME-SERIES</div>
+      <h1>ONE STAIRCASE.<br><span class="solar-gradient">TWENTY-FOUR HOURS.</span></h1>
+      <p class="lead-text">A static architectural anchor recording dynamic daylight shifts, fleeting human presence, and cast shadows.</p>
+      
+      <!-- Interactive Dynamic Time Scrubber -->
+      <div class="scrubber-card">
+        <div class="scrubber-top">
+          <span class="scrub-label">CURRENT SUN ELEVATION: <strong id="solarAngle">12° East</strong></span>
+          <span class="active-hour" id="activeTimeDisplay">07:00 AM</span>
+        </div>
+        <input type="range" id="solarRange" min="0" max="1000" step="1" value="0" />
+        <div class="time-ticks">
+          <span>07:00</span>
+          <span>10:00</span>
+          <span>13:00</span>
+          <span>17:00</span>
+          <span>19:00</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 2: Main Optical Frame with HUD Overlay -->
+    <section class="viewfinder-section">
+      <div class="viewfinder-box" id="viewfinder">
+        
+        <!-- Dynamic Cross-Fade Image Layers -->
+        <div class="image-layers-container" id="layerContainer"></div>
+
+        <!-- Optical Grid -->
+        <div class="grid-overlay" id="gridOverlay">
+          <div class="grid-line h1"></div>
+          <div class="grid-line h2"></div>
+          <div class="grid-line v1"></div>
+          <div class="grid-line v2"></div>
+          <div class="center-cross">+</div>
+        </div>
+
+        <!-- Camera HUD Bar -->
+        <div class="hud-top">
+          <span class="hud-pill"><span class="rec-dot"></span> 35mm FIXED FRAME</span>
+          <button class="hud-toggle-btn" id="toggleHudBtn">TOGGLE HUD [H]</button>
+        </div>
+
+        <div class="hud-bottom">
+          <div class="hud-stat"><label>EXP</label><span id="hudShutter">1/250s</span></div>
+          <div class="hud-stat"><label>APERTURE</label><span id="hudAperture">ƒ/4.0</span></div>
+          <div class="hud-stat"><label>ISO</label><span id="hudIso">100</span></div>
+          <div class="hud-stat"><label>KELVIN</label><span id="hudKelvin">4200K</span></div>
+        </div>
+      </div>
+
+      <!-- Human Traffic & Shadow Log -->
+      <div class="field-notes-card">
+        <h3>Observer Log & Radiance</h3>
+        <p class="note-quote" id="logObservation">"Long, cool morning shadows cross the third landing. Solitary steps echo up from the basement."</p>
+        <div class="notes-grid">
+          <div><label>Foot Traffic Volume</label><strong id="logTraffic">Low • 2 students/hr</strong></div>
+          <div><label>Dominant Light Direction</label><strong id="logAngle">Lateral East Window Fall</strong></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 3: Interactive Split-Curtain Light Comparator -->
+    <section class="comparator-section">
+      <div class="section-heading">
+        <span class="mono-tag">// DIRECT RADIANCE COMPARISON</span>
+        <h2>Shift Analysis Curtain</h2>
+        <p>Drag the slider horizontally to directly compare morning bright diffusion against evening warm angle.</p>
+      </div>
+
+      <div class="split-slider-container" id="splitSlider">
+        <img class="split-img img-before" src="images/_DSC1558.JPG" alt="Morning light" />
+        
+        <div class="split-reveal-wrapper" id="revealWrapper">
+          <img class="split-img img-after" src="images/_DSC1779.JPG" alt="Golden Hour light" />
+        </div>
+
+        <input type="range" min="0" max="100" value="50" class="split-divider-range" id="curtainRange" />
+        <div class="split-handle" id="splitHandle">
+          <div class="handle-icon">↔</div>
+        </div>
+
+        <span class="split-badge badge-left">07:00 AM • Morning</span>
+        <span class="split-badge badge-right">05:00 PM • Golden Hour</span>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div>
+      <p><strong>Mediathon 3.0 Entry</strong> • BITS Pilani Dubai Campus</p>
+      <p class="mono-sub">Original unaltered RAW metadata uploaded to project repository.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
